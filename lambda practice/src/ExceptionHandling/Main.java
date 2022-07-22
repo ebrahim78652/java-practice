@@ -22,7 +22,7 @@ public class Main {
         }
     }
 
-    public static BiConsumer<Integer, Integer> wrapperErrorHandler(BiConsumer<Integer, Integer> bc) {
+    public static <T> BiConsumer<T, T> wrapperErrorHandler(BiConsumer<T, T> bc) {
      return (v, k)-> {
          try {
              bc.accept(v, k);
@@ -31,6 +31,8 @@ public class Main {
              System.out.println("ooppps an error occured");
          }
      };
+
+
     }
 
 
