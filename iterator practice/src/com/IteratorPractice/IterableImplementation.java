@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class IterableImplementation implements Iterable {
+public class IterableImplementation implements Iterable<String> {
 
     List<String> list = new ArrayList<>();
 
@@ -13,7 +13,7 @@ public class IterableImplementation implements Iterable {
     }
 
     @Override
-    public Iterator iterator() {
+    public Iterator<String> iterator() {
         return list.iterator();
     }
 }

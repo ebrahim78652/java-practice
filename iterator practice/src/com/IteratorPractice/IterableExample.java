@@ -51,8 +51,13 @@ public class IterableExample {
     //understanding of the structure and realtion between Iterator and Iterable:
     //Iterable provides all the utilities for a client to allow to iterate over what you are providing
     //the iterator is one of the utilities that the Iterable interface provides.
-    
+
     // the client has to make an inner class extending Iterator maybe, implement the methods, and then use an instance of
     //this class as a helper utility to iterate through the client.
 
+    //what I learn more: the main purpose of the Iterable itnerface is to provide the
+    //iterator. and the enhanced forEach Loop. the forEach Loop in turn uses the enhanced forLoop
+    //and this loop can only work on an iterator.
+
+    
 }
